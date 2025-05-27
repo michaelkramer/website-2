@@ -7,9 +7,9 @@ export default defineConfig({
   base: "/website-2/",
   plugins: [tailwindcss(), reactRouter()],
   publicDir: "public",
-  build: {
-    outDir: "dist",
-    sourcemap: true,
-    manifest: true,
-  },
+  // build: {
+  //   outDir: "dist",
+  //   sourcemap: true,
+  //   manifest: true,
+  // },
 });
