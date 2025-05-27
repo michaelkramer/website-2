@@ -5,23 +5,23 @@ import { useAppContext } from "./provider";
 export const navItems = [
   {
     name: "Home",
-    route: "/",
+    route: "/website-2/",
   },
   {
     name: "Resume",
-    route: "/resume",
+    route: "/website-2/resume",
   },
   {
     name: "RLS2000",
-    route: "/rls",
+    route: "/website-2/rls",
   },
   {
     name: "Notes",
-    route: "/notes",
+    route: "/website-2/notes",
   },
   {
     name: "Icons",
-    route: "/icons",
+    route: "/website-2/icons",
   },
   // {
   //   name: "Contact",
