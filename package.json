@@ -3,9 +3,11 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "homepage": "https://michaelkramer.github.io/website-2/",
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
+    "build-router": "react-router build",
     "lint": "eslint src",
     "lintfix": "eslint src --fix",
     "preview": "vite preview"

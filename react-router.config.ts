@@ -4,4 +4,5 @@ export default {
   appDirectory: "src",
 
   ssr: false,
+  buildDirectory: "dist",
 } satisfies Config;

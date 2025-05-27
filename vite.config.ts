@@ -6,9 +6,10 @@ import { defineConfig } from "vite";
 export default defineConfig({
   base: "/website-2/",
   plugins: [tailwindcss(), reactRouter()],
-  publicDir: "public",
+  publicDir: "./public",
   build: {
-    outDir: "dist",
+    emptyOutDir: true,
+    outDir: "./dist",
     sourcemap: true,
     manifest: true,
   },
