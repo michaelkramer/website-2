@@ -16,6 +16,7 @@ export default tseslint.config(
       "import/order": ["error", { alphabetize: { order: "asc" } }],
       "@typescript-eslint/no-explicit-any": "off",
     },
+    ignores: ["public", ".github", ".react-router", "dist", "node_modules"],
   },
   eslintPluginPrettierRecommended,
 );
