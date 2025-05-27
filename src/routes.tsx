@@ -1,0 +1,22 @@
+import {
+  type RouteConfig,
+  route,
+  layout,
+  index,
+} from "@react-router/dev/routes";
+
+export default [
+  layout("./layout/main-layout.tsx", [
+    index("./pages/home.tsx"),
+    route("contact", "./pages/contact.tsx"),
+    route("resume", "./pages/resume.tsx"),
+    route("icons", "./pages/icons.tsx"),
+    // route("notes", "./pages/notes.tsx"),
+    route("rls", "./pages/rls.tsx"),
+    route("notes", "./pages/notes.tsx", [
+      index("./pages/notes/index.tsx"),
+      route("grpccode", "./pages/notes/grpccode.tsx"),
+      route("git", "./pages/notes/git.tsx"),
+    ]),
+  ]),
+] satisfies RouteConfig;
