@@ -1,0 +1,2 @@
+import{w as p,x as t,y as e,z as o,a as n,A as c}from"./chunk-KNED5TY2-CrVj33og.js";function i(a){return function(){const r={params:o(),loaderData:e(),actionData:t(),matches:p()};return n.createElement(a,r)}}function m(a){return function(){const r={params:o(),loaderData:e(),actionData:t()};return n.createElement(a,r)}}function d(a){return function(){const r={params:o(),loaderData:e(),actionData:t(),error:c()};return n.createElement(a,r)}}export{m as a,d as b,i as w};
+//# sourceMappingURL=with-props-BDesa6uQ.js.map
