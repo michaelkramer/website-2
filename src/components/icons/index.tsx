@@ -1,5 +1,5 @@
-import { IconThemes } from "./IconTheme";
 import { IconList } from "./IconList";
+import { IconThemes } from "./IconTheme";
 
 export { IconThemes };
 

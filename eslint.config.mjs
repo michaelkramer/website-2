@@ -14,11 +14,7 @@ export default tseslint.config(
     ],
     rules: {
       "import/order": ["error", { alphabetize: { order: "asc" } }],
-      "import/resolver": {
-        typescript: {
-          alwaysTryTypes: true,
-        },
-      },
+      "@typescript-eslint/no-explicit-any": "off",
     },
   },
   eslintPluginPrettierRecommended,

@@ -1,6 +1,6 @@
 import { Outlet } from "react-router";
-import { Navbar } from "./navbar";
 import Footer from "./footer";
+import { Navbar } from "./navbar";
 import { AppProvider } from "./provider";
 
 export default function Layout() {

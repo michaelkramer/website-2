@@ -1,5 +1,5 @@
-import { ErrorBoundary } from "react-error-boundary";
 import * as React from "react";
+import { ErrorBoundary } from "react-error-boundary";
 import { IconTheme } from "../components/icons/IconTheme";
 
 type AppProviderProps = {

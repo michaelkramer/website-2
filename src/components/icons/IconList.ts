@@ -1,12 +1,12 @@
 import * as AI from "react-icons/ai";
 import * as BI from "react-icons/bi";
 import * as BS from "react-icons/bs";
-import * as FC from "react-icons/fc";
 import * as FA from "react-icons/fa";
-import * as RI from "react-icons/ri";
+import * as FC from "react-icons/fc";
+import { IconType } from "react-icons/lib";
 import * as LU from "react-icons/lu";
 import * as MD from "react-icons/md";
-import { IconType } from "react-icons/lib";
+import * as RI from "react-icons/ri";
 import { IconTheme } from "./IconTheme";
 
 interface $Icon {

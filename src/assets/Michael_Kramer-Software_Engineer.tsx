@@ -1,7 +1,7 @@
 import { ReactNode, useContext } from "react";
 import { Icon } from "../components/icons";
-import { AppContext } from "../layout/provider";
 import { IconTheme } from "../components/icons/IconTheme";
+import { AppContext } from "../layout/provider";
 
 const Company: React.FC<{ children: ReactNode }> = ({ children }) => (
   <h4>

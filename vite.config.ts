@@ -4,6 +4,7 @@ import { defineConfig } from "vite";
 
 // https://vite.dev/config/
 export default defineConfig({
+  base: "/website-2/",
   plugins: [tailwindcss(), reactRouter()],
   publicDir: "public",
   build: {
