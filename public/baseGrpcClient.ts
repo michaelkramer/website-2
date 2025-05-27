@@ -1,18 +1,18 @@
 /* eslint-disable */
 // @ts-nocheck
-import * as grpc from '@grpc/grpc-js';
-import * as protoLoader from '@grpc/proto-loader';
-import { PackageDefinition } from '@grpc/proto-loader';
-import _ from 'lodash';
-import { BehaviorSubject, ReplaySubject } from 'rxjs';
+// import * as grpc from '@grpc/grpc-js';
+// import * as protoLoader from '@grpc/proto-loader';
+// import { PackageDefinition } from '@grpc/proto-loader';
+// import _ from 'lodash';
+// import { BehaviorSubject, ReplaySubject } from 'rxjs';
 
-import { Logger } from '../lib/logger';
-import {
-  GrpcServiceClient, GRPCServiceContructor, GRPCStreamEvent, isProtoServiceKey,
-} from './grpc.common';
-import { ClientStateSnapshot, ConnectionStatus, GRPCClient, GRPCClientCalls, GRPCClientStreams } from './grpcClient';
+// import { Logger } from '../lib/logger';
+// import {
+//   GrpcServiceClient, GRPCServiceContructor, GRPCStreamEvent, isProtoServiceKey,
+// } from './grpc.common';
+// import { ClientStateSnapshot, ConnectionStatus, GRPCClient, GRPCClientCalls, GRPCClientStreams } from './grpcClient';
 
-import path from 'path';
+// import path from 'path';
 
 export const BASE_PROTO_PATH = path.join(__dirname, '/Protos');
 
@@ -103,7 +103,7 @@ export abstract class BaseGrpcClient<S> implements GRPCClient {
    */
   protected bindAllCallsAsAsync(): void {
     const methods = Object.keys(this.calls);
-    // eslint-disable-next-line no-restricted-syntax
+     
     for (const key of methods) {
       this.bindCallAsAsync(key);
     }
@@ -114,7 +114,7 @@ export abstract class BaseGrpcClient<S> implements GRPCClient {
    * @param callName
    */
   protected bindCallAsAsync(callName: string): void {
-    // eslint-disable-next-line consistent-return
+     
     this._calls[callName] = ((args: any) => new Promise((resolve, reject) => {
       if (!this.client) {
         return reject(new Error('Client not initialized'));
