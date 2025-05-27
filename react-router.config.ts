@@ -5,4 +5,5 @@ export default {
 
   ssr: false,
   buildDirectory: "dist",
+  basename: "/website-2/",
 } satisfies Config;
