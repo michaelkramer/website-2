@@ -14,7 +14,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
     <html lang="en">
       <head>
         <meta charSet="UTF-8" />
-        <link rel="icon" type="image/svg+xml" href="./src/assets/me.svg" />
+        <link rel="icon" type="image/svg+xml" href="/assets/me.svg" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Michael Kramer</title>
         <Meta />
