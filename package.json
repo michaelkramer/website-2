@@ -1,13 +1,14 @@
 {
   "name": "website-2",
   "private": true,
-  "version": "0.0.0",
+  "version": "0.0.1",
   "type": "module",
   "homepage": "https://michaelkramer.github.io/website-2/",
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
     "build-router": "tsc -b && vite build && react-router build",
+    "deploy": "gh-pages -d dist/client",
     "lint": "eslint src",
     "lintfix": "eslint src --fix",
     "preview": "vite preview"
@@ -45,6 +46,7 @@
     "eslint-config-prettier": "^10.1.2",
     "eslint-plugin-import": "^2.31.0",
     "eslint-plugin-prettier": "^5.2.6",
+    "gh-pages": "^6.3.0",
     "globals": "^15.15.0",
     "prettier": "3.5.3",
     "react-router-devtools": "^1.1.0",
