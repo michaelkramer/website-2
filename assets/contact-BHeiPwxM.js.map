@@ -1,1 +1,0 @@
-{"version":3,"file":"contact-BHeiPwxM.js","sources":["../../../src/pages/contact.tsx"],"sourcesContent":["export default function Contact() {\n  return <div>Contact</div>;\n}\n"],"names":["contact","_withComponentProps","jsx","children"],"mappings":"yFAAA,MAAAA,EAAAC,EAAA,UAAkC,CACzB,OAAAC,EAAAA,IAAC,OAAIC,SAAO,SAAA,CAAA,CACrB,CAAA"}

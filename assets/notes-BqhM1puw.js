@@ -1,2 +1,0 @@
-import{w as s}from"./with-props-Cri17Z5P.js";import{o as t,t as n,O as e}from"./chunk-KNED5TY2-BKNaqtJA.js";const l=s(function(){return t.jsxs(t.Fragment,{children:[t.jsxs("ul",{className:"menu menu-horizontal bg-base-200 rounded-box",children:[t.jsx("li",{children:t.jsx(n,{to:"/notes/grpccode",children:"gRpc Client"})}),t.jsx("li",{children:t.jsx(n,{to:"/notes/git",children:"git tricks"})})]}),t.jsx(e,{})]})});export{l as default};
-//# sourceMappingURL=notes-BqhM1puw.js.map
