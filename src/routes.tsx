@@ -8,7 +8,7 @@ import {
 } from "@react-router/dev/routes";
 
 export default [
-  ...prefix("/website-2/", [
+  ...prefix("website-2/", [
     layout("./layout/main-layout.tsx", [
       index("./pages/home.tsx"),
       route("contact", "./pages/contact.tsx"),
