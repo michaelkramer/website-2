@@ -29,7 +29,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
   );
 }
 
-export default function Root() {
+export default function App() {
   return <Outlet />;
 }
 
@@ -46,7 +46,7 @@ export function ErrorBoundary({ error }) {
         <h1>
           {error.status} {error.statusText}
         </h1>
-        <p>{error.data}</p>
+        <p>{JSON.stringify(error)}</p>
       </>
     );
   } else if (error instanceof Error) {
