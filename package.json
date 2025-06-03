@@ -7,7 +7,7 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
-    "build-router": "tsc -b && vite build && react-router build",
+    "build-router": "tsc -b && react-router build",
     "deploy": "gh-pages -d dist/client",
     "lint": "eslint src",
     "lintfix": "eslint src --fix",
