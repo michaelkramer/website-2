@@ -1,3 +1,4 @@
+import { Link } from "react-router";
 import icon from "../assets/me.svg";
 import { Icon, IconThemes } from "../components/icons";
 import { useAppContext } from "./provider";
@@ -64,7 +65,9 @@ export function Navbar() {
           >
             {navItems.map((item) => (
               <li key={item.name}>
-                <a href={item.route}>{item.name}</a>
+                <Link to={item.route} className="text-base-content">
+                  {item.name}
+                </Link>
               </li>
             ))}
           </ul>
@@ -77,7 +80,9 @@ export function Navbar() {
         <ul className="menu menu-horizontal px-1">
           {navItems.map((item) => (
             <li key={item.name}>
-              <a href={item.route}>{item.name}</a>
+              <Link to={item.route} className="text-base-content">
+                {item.name}
+              </Link>
             </li>
           ))}
         </ul>
