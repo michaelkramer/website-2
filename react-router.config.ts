@@ -13,4 +13,5 @@ export default {
   //   "/notes/grpccode",
   //   "/notes/git",
   // ],
+  buildDirectory: "./output",
 } satisfies Config;

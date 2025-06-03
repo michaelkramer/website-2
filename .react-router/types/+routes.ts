@@ -13,25 +13,28 @@ type Pages = {
   "/": {
     params: {};
   };
-  "/contact": {
+  "/website-2": {
     params: {};
   };
-  "/resume": {
+  "/website-2/contact": {
     params: {};
   };
-  "/icons": {
+  "/website-2/resume": {
     params: {};
   };
-  "/rls": {
+  "/website-2/icons": {
     params: {};
   };
-  "/notes": {
+  "/website-2/rls": {
     params: {};
   };
-  "/notes/grpccode": {
+  "/website-2/notes": {
     params: {};
   };
-  "/notes/git": {
+  "/website-2/notes/grpccode": {
+    params: {};
+  };
+  "/website-2/notes/git": {
     params: {};
   };
 };
@@ -39,46 +42,46 @@ type Pages = {
 type RouteFiles = {
   "root.tsx": {
     id: "root";
-    page: "/" | "/contact" | "/resume" | "/icons" | "/rls" | "/notes" | "/notes/grpccode" | "/notes/git";
+    page: "/" | "/website-2" | "/website-2/contact" | "/website-2/resume" | "/website-2/icons" | "/website-2/rls" | "/website-2/notes" | "/website-2/notes/grpccode" | "/website-2/notes/git";
   };
   "./layout/main-layout.tsx": {
     id: "layout/main-layout";
-    page: "/" | "/contact" | "/resume" | "/icons" | "/rls" | "/notes" | "/notes/grpccode" | "/notes/git";
+    page: "/website-2" | "/website-2/contact" | "/website-2/resume" | "/website-2/icons" | "/website-2/rls" | "/website-2/notes" | "/website-2/notes/grpccode" | "/website-2/notes/git";
   };
   "./pages/home.tsx": {
     id: "pages/home";
-    page: "/";
+    page: "/website-2";
   };
   "./pages/contact.tsx": {
     id: "pages/contact";
-    page: "/contact";
+    page: "/website-2/contact";
   };
   "./pages/resume.tsx": {
     id: "pages/resume";
-    page: "/resume";
+    page: "/website-2/resume";
   };
   "./pages/icons.tsx": {
     id: "pages/icons";
-    page: "/icons";
+    page: "/website-2/icons";
   };
   "./pages/rls.tsx": {
     id: "pages/rls";
-    page: "/rls";
+    page: "/website-2/rls";
   };
   "./pages/notes.tsx": {
     id: "pages/notes";
-    page: "/notes" | "/notes/grpccode" | "/notes/git";
+    page: "/website-2/notes" | "/website-2/notes/grpccode" | "/website-2/notes/git";
   };
   "./pages/notes/index.tsx": {
     id: "pages/notes/index";
-    page: "/notes";
+    page: "/website-2/notes";
   };
   "./pages/notes/grpccode.tsx": {
     id: "pages/notes/grpccode";
-    page: "/notes/grpccode";
+    page: "/website-2/notes/grpccode";
   };
   "./pages/notes/git.tsx": {
     id: "pages/notes/git";
-    page: "/notes/git";
+    page: "/website-2/notes/git";
   };
 };
