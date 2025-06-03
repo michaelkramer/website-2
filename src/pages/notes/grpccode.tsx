@@ -1,4 +1,6 @@
-// import { ConvertSyntax } from "../../components/common/convertSyntax";
+import { ConvertSyntax } from "../../components/common/convertSyntax";
+
+const PRE_PATH = "/website-2";
 
 export default function Component() {
   return (
@@ -27,21 +29,25 @@ export default function Component() {
       </div>
       <div className="mb-4 text-2xl font-bold">
         Base class:{" "}
-        <a className="link" href={`/baseGrpcClient.ts`} target="_blank">
+        <a
+          className="link"
+          href={`${PRE_PATH}/baseGrpcClient.ts`}
+          target="_blank"
+        >
           baseGrpcClient.ts
         </a>
       </div>
       <div className="rounded-sm bg-base-300 border border-slate-300 p-2 mb-4 h-50 shadow-md overflow-y-auto">
-        {/* <ConvertSyntax url={`/baseGrpcClient.ts`} slim /> */}
+        <ConvertSyntax url={`${PRE_PATH}/baseGrpcClient.ts`} slim />
       </div>
       <div className="mb-4 text-2xl font-bold">
         Interfaces and common functions:{" "}
-        <a className="link" href={`/grpcClient.ts`} target="_blank">
+        <a className="link" href={`${PRE_PATH}/grpcClient.ts`} target="_blank">
           grpcClient.ts
         </a>
       </div>
       <div className="rounded-sm bg-base-300 border border-slate-300 p-2 mb-4 h-50 shadow-md overflow-y-auto">
-        {/* <ConvertSyntax url={`/grpcClient.ts`} slim /> */}
+        <ConvertSyntax url={`${PRE_PATH}/grpcClient.ts`} slim />
       </div>
 
       <div className="mb-4 text-2xl font-bold">Example:</div>
@@ -84,18 +90,22 @@ export default function Component() {
         . This bash script used to convert protobufs.
       </div>
       <div className="rounded-sm bg-base-300 border border-slate-300 p-2 mb-4 h-50 shadow-md overflow-y-auto">
-        {/* <ConvertSyntax url={`/convertProto.sh`} language={"bash"} slim /> */}
+        <ConvertSyntax
+          url={`${PRE_PATH}/convertProto.sh`}
+          language={"bash"}
+          slim
+        />
       </div>
       <div className="mb-4 text-2xl font-bold">The results: </div>
       <div className="rounded-sm bg-base-300 border border-slate-300 p-2 mb-4 h-50 shadow-md overflow-y-auto">
-        {/* <ConvertSyntax url={`/interfaces/Greeter.ts`} slim /> */}
+        <ConvertSyntax url={`${PRE_PATH}/interfaces/Greeter.ts`} slim />
       </div>
 
       <div className="mb-4 text-2xl font-bold">
         Now how to use the baseGrpcClient Class.
       </div>
       <div className="rounded-sm bg-base-300 border border-slate-300 p-2 mb-4 h-50 shadow-md overflow-y-auto">
-        {/* <ConvertSyntax url={`/GreeterClient.ts`} slim /> */}
+        <ConvertSyntax url={`${PRE_PATH}/GreeterClient.ts`} slim />
       </div>
     </div>
   );

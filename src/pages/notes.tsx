@@ -5,10 +5,10 @@ export default function Component() {
     <>
       <ul className="menu menu-horizontal bg-base-200 rounded-box">
         <li>
-          <Link to="/notes/grpccode">gRpc Client</Link>
+          <Link to="/website-2/notes/grpccode">gRpc Client</Link>
         </li>
         <li>
-          <Link to="/notes/git">git tricks</Link>
+          <Link to="/website-2/notes/git">git tricks</Link>
         </li>
       </ul>
       <Outlet />
