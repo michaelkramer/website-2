@@ -4,5 +4,4 @@ export default {
   appDirectory: "./src",
   ssr: false,
   prerender: true,
-  basename: "/website-2",
 } satisfies Config;
