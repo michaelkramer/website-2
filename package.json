@@ -8,7 +8,7 @@
     "dev-vite": "vite",
     "dev": "react-router dev",
     "build": "tsc -b && vite build",
-    "build-router": "tsc -b && react-router build",
+    "build-router": "react-router build",
     "deploy": "gh-pages -d dist/client",
     "lint": "eslint src",
     "lintfix": "eslint src --fix",
@@ -16,8 +16,8 @@
   },
   "dependencies": {
     "@fontsource-variable/space-grotesk": "^5.2.6",
-    "@react-router/node": "*",
-    "@react-router/serve": "*",
+    "@react-router/node": "^7.6.1",
+    "@react-router/serve":"^7.6.1",
     "axios": "^1.9.0",
     "daisyui": "^5.0.19",
     "isbot": "^5",
@@ -36,7 +36,7 @@
   },
   "devDependencies": {
     "@eslint/js": "^9.24.0",
-    "@react-router/dev": "*",
+    "@react-router/dev": "^7.5.3",
     "@tailwindcss/typography": "^0.5.16",
     "@tailwindcss/vite": "^4.1.4",
     "@types/react": "^19.0.10",
@@ -53,6 +53,7 @@
     "react-router-devtools": "*",
     "typescript": "~5.7.2",
     "typescript-eslint": "^8.30.0",
-    "vite": "^6.2.0"
+    "vite": "^6.3.3",
+    "vite-tsconfig-paths": "^5.1.4"
   }
 }

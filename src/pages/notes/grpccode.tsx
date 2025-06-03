@@ -1,4 +1,4 @@
-import { ConvertSyntax } from "../../components/common/convertSyntax";
+// import { ConvertSyntax } from "../../components/common/convertSyntax";
 
 export default function Component() {
   return (
@@ -32,7 +32,7 @@ export default function Component() {
         </a>
       </div>
       <div className="rounded-sm bg-base-300 border border-slate-300 p-2 mb-4 h-50 shadow-md overflow-y-auto">
-        <ConvertSyntax url={`/baseGrpcClient.ts`} slim />
+        {/* <ConvertSyntax url={`/baseGrpcClient.ts`} slim /> */}
       </div>
       <div className="mb-4 text-2xl font-bold">
         Interfaces and common functions:{" "}
@@ -41,7 +41,7 @@ export default function Component() {
         </a>
       </div>
       <div className="rounded-sm bg-base-300 border border-slate-300 p-2 mb-4 h-50 shadow-md overflow-y-auto">
-        <ConvertSyntax url={`/grpcClient.ts`} slim />
+        {/* <ConvertSyntax url={`/grpcClient.ts`} slim /> */}
       </div>
 
       <div className="mb-4 text-2xl font-bold">Example:</div>
@@ -57,11 +57,11 @@ export default function Component() {
         </ul>
       </div>
       <div className="rounded-sm bg-base-300 border border-slate-300 p-2 mb-4 h-50 shadow-md overflow-y-auto">
-        <ConvertSyntax
+        {/* <ConvertSyntax
           url={`/protos/Greeter.proto`}
           language={"protobuf"}
           slim
-        />
+        /> */}
       </div>
       <div className="mb-4">
         I used typescript so, I like to convert the proto to interface to get
@@ -84,18 +84,18 @@ export default function Component() {
         . This bash script used to convert protobufs.
       </div>
       <div className="rounded-sm bg-base-300 border border-slate-300 p-2 mb-4 h-50 shadow-md overflow-y-auto">
-        <ConvertSyntax url={`/convertProto.sh`} language={"bash"} slim />
+        {/* <ConvertSyntax url={`/convertProto.sh`} language={"bash"} slim /> */}
       </div>
       <div className="mb-4 text-2xl font-bold">The results: </div>
       <div className="rounded-sm bg-base-300 border border-slate-300 p-2 mb-4 h-50 shadow-md overflow-y-auto">
-        <ConvertSyntax url={`/interfaces/Greeter.ts`} slim />
+        {/* <ConvertSyntax url={`/interfaces/Greeter.ts`} slim /> */}
       </div>
 
       <div className="mb-4 text-2xl font-bold">
         Now how to use the baseGrpcClient Class.
       </div>
       <div className="rounded-sm bg-base-300 border border-slate-300 p-2 mb-4 h-50 shadow-md overflow-y-auto">
-        <ConvertSyntax url={`/GreeterClient.ts`} slim />
+        {/* <ConvertSyntax url={`/GreeterClient.ts`} slim /> */}
       </div>
     </div>
   );
