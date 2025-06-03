@@ -5,7 +5,8 @@
   "type": "module",
   "homepage": "https://michaelkramer.github.io/website-2/",
   "scripts": {
-    "dev": "vite",
+    "dev-vite": "vite",
+    "dev": "react-router dev",
     "build": "tsc -b && vite build",
     "build-router": "tsc -b && react-router build",
     "deploy": "gh-pages -d dist/client",
