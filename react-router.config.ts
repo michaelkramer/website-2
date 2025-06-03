@@ -5,5 +5,5 @@ export default {
   ssr: false,
   prerender: true,
   buildDirectory: "dist",
-  basename: "/website-2/",
+  //basename: "/website-2/",
 } satisfies Config;
