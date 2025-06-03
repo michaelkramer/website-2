@@ -9,10 +9,10 @@ import {
 export default [
   layout("./layout/main-layout.tsx", [
     index("./pages/home.tsx"),
-    route("contact", "./pages/contact.tsx"),
-    route("resume", "./pages/resume.tsx"),
+    route("/contact", "./pages/contact.tsx"),
+    route("/resume", "./pages/resume.tsx"),
     // route("./icons", "./pages/icons.tsx"),
-    route("rls", "./pages/rls.tsx"),
+    route("/rls", "./pages/rls.tsx"),
     // route("notes", "./pages/notes.tsx", [
     //   index("./pages/notes/index.tsx"),
     //   route("grpccode", "./pages/notes/grpccode.tsx"),
