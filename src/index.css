@@ -4,3 +4,9 @@
 body {
     font-family: "Space Grotesk Variable";
 }
+
+.item-spacing {
+  li + li {
+    @apply mt-4;
+  }
+}

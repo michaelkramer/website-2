@@ -28,6 +28,9 @@ type Pages = {
   "/website-2/rls": {
     params: {};
   };
+  "/website-2/projects": {
+    params: {};
+  };
   "/website-2/notes": {
     params: {};
   };
@@ -42,11 +45,11 @@ type Pages = {
 type RouteFiles = {
   "root.tsx": {
     id: "root";
-    page: "/" | "/website-2" | "/website-2/contact" | "/website-2/resume" | "/website-2/icons" | "/website-2/rls" | "/website-2/notes" | "/website-2/notes/grpccode" | "/website-2/notes/git";
+    page: "/" | "/website-2" | "/website-2/contact" | "/website-2/resume" | "/website-2/icons" | "/website-2/rls" | "/website-2/projects" | "/website-2/notes" | "/website-2/notes/grpccode" | "/website-2/notes/git";
   };
   "./layout/main-layout.tsx": {
     id: "layout/main-layout";
-    page: "/website-2" | "/website-2/contact" | "/website-2/resume" | "/website-2/icons" | "/website-2/rls" | "/website-2/notes" | "/website-2/notes/grpccode" | "/website-2/notes/git";
+    page: "/website-2" | "/website-2/contact" | "/website-2/resume" | "/website-2/icons" | "/website-2/rls" | "/website-2/projects" | "/website-2/notes" | "/website-2/notes/grpccode" | "/website-2/notes/git";
   };
   "./pages/home.tsx": {
     id: "pages/home";
@@ -67,6 +70,10 @@ type RouteFiles = {
   "./pages/rls.tsx": {
     id: "pages/rls";
     page: "/website-2/rls";
+  };
+  "./pages/projects/index.tsx": {
+    id: "pages/projects/index";
+    page: "/website-2/projects";
   };
   "./pages/notes.tsx": {
     id: "pages/notes";

@@ -17,6 +17,10 @@ export const navItems = [
     route: "/website-2/rls",
   },
   {
+    name: "Projects",
+    route: "/website-2/projects",
+  },
+  {
     name: "Notes",
     route: "/website-2/notes",
   },

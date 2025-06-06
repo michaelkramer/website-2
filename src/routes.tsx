@@ -15,6 +15,8 @@ export default [
       route("resume", "./pages/resume.tsx"),
       route("icons", "./pages/icons.tsx"),
       route("rls", "./pages/rls.tsx"),
+      route("projects", "./pages/projects/index.tsx"),
+
       route("notes", "./pages/notes.tsx", [
         index("./pages/notes/index.tsx"),
         route("grpccode", "./pages/notes/grpccode.tsx"),

@@ -3,24 +3,11 @@ import MLSPropertyfinderDashboard from "../assets/rls/MLSPropertyfinder-dashboar
 import AgentWebsite from "../assets/rls/agent-website.svg";
 import mls from "../assets/rls/mls.png";
 import rls from "../assets/rls/rls.png";
+import { ImageWPopup } from "../components/Image";
+import { ImageContainer } from "../components/Image/Image-container";
 import { Icon } from "../components/icons";
 import { IconTheme } from "../components/icons/IconTheme";
 import { AppContext } from "../layout/provider";
-
-const ImageContainer: React.FC<{ children: ReactNode; bgColor?: string }> = ({
-  children,
-  bgColor,
-}) => {
-  return (
-    <div
-      className={
-        (bgColor ?? "bg-slate-50") + " border border-slate-300 rounded-sm p-4"
-      }
-    >
-      {children}
-    </div>
-  );
-};
 
 const ListItem: React.FC<{ children: ReactNode; iconTheme?: IconTheme }> = ({
   children,
@@ -31,44 +18,6 @@ const ListItem: React.FC<{ children: ReactNode; iconTheme?: IconTheme }> = ({
       <Icon name={"Home"} theme={iconTheme} />
       {children}
     </li>
-  );
-};
-
-const ImagePopup: React.FC<{
-  children: ReactNode;
-  ref: React.RefObject<HTMLDialogElement | null>;
-}> = ({ children, ref }) => {
-  return (
-    <dialog className="modal" ref={ref}>
-      <div className="modal-box w-[80dvw] max-w-5xl rounded-sm">{children}</div>
-      <form method="dialog" className="modal-backdrop">
-        <button
-          onClick={() => {
-            ref.current?.close();
-          }}
-        >
-          close
-        </button>
-      </form>
-    </dialog>
-  );
-};
-
-const ImagePopupLabel: React.FC<{
-  children: ReactNode;
-  ref: React.RefObject<HTMLDialogElement | null>;
-}> = ({ children, ref }) => {
-  return (
-    <div className="text-center">
-      <button
-        className="btn btn-link no-underline text-current text-xs"
-        onClick={() => {
-          ref.current?.showModal();
-        }}
-      >
-        {children}
-      </button>
-    </div>
   );
 };
 
@@ -157,20 +106,10 @@ export default function Component() {
       <h3 className="text-xl font-bold">Technology Overview</h3>
       <div style={{ display: "flex" }}>
         <div className="mr-4">
-          <ImageContainer>
-            <img
-              src={MLSPropertyfinderDashboard}
-              className="w-7xl cursor-pointer"
-              onClick={() => {
-                modalDashboard.current?.showModal();
-              }}
-            />
-          </ImageContainer>
-          <ImagePopupLabel ref={modalDashboard}>View Dashboard</ImagePopupLabel>
-
-          <ImagePopup ref={modalDashboard}>
-            <img src={MLSPropertyfinderDashboard} className="w-full" />
-          </ImagePopup>
+          <ImageWPopup
+            imgSrc={MLSPropertyfinderDashboard}
+            modalRef={modalDashboard}
+          />
         </div>
         <div>
           <div>
@@ -275,20 +214,7 @@ export default function Component() {
           </div>
         </div>
         <div className="ml-4">
-          <ImageContainer>
-            <img
-              src={AgentWebsite}
-              className="w-7xl cursor-pointer"
-              onClick={() => {
-                modalWebsite.current?.showModal();
-              }}
-            />
-          </ImageContainer>
-          <ImagePopupLabel ref={modalWebsite}>View Website</ImagePopupLabel>
-
-          <ImagePopup ref={modalWebsite}>
-            <img src={AgentWebsite} className="w-7xl cursor-pointer" />
-          </ImagePopup>
+          <ImageWPopup imgSrc={AgentWebsite} modalRef={modalWebsite} />
         </div>
       </div>
       <h3 className="text-xl font-bold">Conclusion</h3>

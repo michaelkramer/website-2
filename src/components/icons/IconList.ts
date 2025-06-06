@@ -2,6 +2,7 @@ import * as AI from "react-icons/ai";
 import * as BI from "react-icons/bi";
 import * as BS from "react-icons/bs";
 import * as FA from "react-icons/fa";
+import * as FA6 from "react-icons/fa6";
 import * as FC from "react-icons/fc";
 import { IconType } from "react-icons/lib";
 import * as LU from "react-icons/lu";
@@ -79,4 +80,20 @@ export const IconList: $Icon[] = [
   { name: "Moon", theme: IconTheme.fc, component: FA.FaMoon },
   { name: "Moon", theme: IconTheme.antd, component: AI.AiOutlineMoon },
   { name: "Moon", theme: IconTheme.bi, component: RI.RiMoonFill },
+
+  {
+    name: "UnderConstruction",
+    theme: IconTheme.fc,
+    component: FA6.FaRoadBarrier,
+  },
+  {
+    name: "UnderConstruction",
+    theme: IconTheme.antd,
+    component: LU.LuTrafficCone,
+  },
+  {
+    name: "UnderConstruction",
+    theme: IconTheme.bi,
+    component: BI.BiSolidTrafficBarrier,
+  },
 ];
